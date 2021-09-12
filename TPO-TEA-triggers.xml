@@ -1545,7 +1545,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="Double Rocket Punch" Id="f05655ab-9acf-4971-aef3-ad0544f1137b" RegularExpression="14:4847:Brute Justice starts using Double Rocket Punch">
                 <Actions>
-                  <Action OrderNumber="1" PlaySoundFileExpression="https://raw.githubusercontent.com/rvaidya/tpo-tea-triggers/master/resources/wav/arthars/rocketpunch.wav" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="PlaySound">
+                  <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Rocket Punch" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Action>
@@ -1555,7 +1555,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="Super Jump" Id="7d142522-e370-4a74-a4a6-0b7e054ac140" RegularExpression="14:4849:Brute Justice starts using Super Jump">
                 <Actions>
-                  <Action OrderNumber="1" PlaySoundFileExpression="https://raw.githubusercontent.com/rvaidya/tpo-tea-triggers/master/resources/wav/arthars/superjump.wav" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="PlaySound">
+                  <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Super Jump" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Action>
@@ -1589,7 +1589,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="Missile Command" Id="53288c05-09f8-4356-b348-acffbc8a4d54" RegularExpression="14:484D:Brute Justice starts using Missile Command">
                 <Actions>
-                  <Action OrderNumber="1" PlaySoundFileExpression="https://raw.githubusercontent.com/rvaidya/tpo-tea-triggers/master/resources/wav/arthars/missile%202.0.wav" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="PlaySound">
+                  <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Missile Command" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Action>
