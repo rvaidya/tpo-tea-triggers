@@ -1,2 +1,6 @@
 # tpo-tea-triggers
-Original source: https://github.com/lexxiesia/xiv_triggernometry
+Original sources:
+
+https://github.com/lexxiesia/xiv_triggernometry
+https://github.com/ayaliz/triggers
+https://github.com/MikalMirkas/ffxiv-triggers
