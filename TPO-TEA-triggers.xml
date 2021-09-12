@@ -1228,6 +1228,89 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder Id="12626e41-2a4c-4332-9863-672de7894eff" Name="Final Decree Nisi" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="# Set Vars" Id="79192ba0-12c3-42c5-b135-a85229647530" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Decree Nisi (?&lt;nType&gt;[α-ωΑ-Ω])">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="nisiAlpha" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Α" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="2" VariableOp="SetString" VariableName="nisiBeta" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Β" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="3" VariableOp="SetString" VariableName="nisiGamma" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Γ" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                          <Action OrderNumber="4" VariableOp="SetString" VariableName="nisiDelta" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="true" Grouping="And">
+                              <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Δ" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                            <Conditions />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="And" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Call Delta (Green)" Id="79eec369-ac5c-4419-9cd1-6e98a3d88c0c" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Judgment: Decree Nisi [Δδ]">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Get Green Delta" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Call Alpha (Blue)" Id="1171fbe2-b1a4-4994-933b-ff291a82b2ed" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Judgment: Decree Nisi [Αα]">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Get Blue Alpha" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Call Beta (Orange)" Id="96389860-700a-4481-9c02-e834b9df9ab1" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Judgment: Decree Nisi [Ββ]">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Get Orange Beta" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Call Gamma (Purple)" Id="88016dc7-0601-4a6e-a87e-18bb9991f4dd" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Judgment: Decree Nisi [Γγ]">
+                        <Actions>
+                          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" UseTTSTextExpression="Get Purple Gamma" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                            <Conditions />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                        </Condition>
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
                 </Folders>
                 <Triggers>
                   <Trigger Enabled="true" Name="# Setting" Id="0baa9064-ad36-4bb9-aed8-a20af6ba526d" RegularExpression="14:483E:Brute Justice starts using">
@@ -1254,42 +1337,6 @@
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Final Decree Nisi" Id="79192ba0-12c3-42c5-b135-a85229647530" RegularExpression="1A:[0-9A-F]{8}:(?&lt;name&gt;[\w-' ]+) gains the effect of Final Decree Nisi (?&lt;nType&gt;[α-ωΑ-Ω])">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="${nType}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                        </Condition>
-                        <Conditions />
-                      </Action>
-                      <Action OrderNumber="2" VariableOp="SetString" VariableName="nisiAlpha" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Α" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                        </Condition>
-                        <Conditions />
-                      </Action>
-                      <Action OrderNumber="3" VariableOp="SetString" VariableName="nisiBeta" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Β" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                        </Condition>
-                        <Conditions />
-                      </Action>
-                      <Action OrderNumber="4" VariableOp="SetString" VariableName="nisiGamma" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Γ" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                        </Condition>
-                        <Conditions />
-                      </Action>
-                      <Action OrderNumber="5" VariableOp="SetString" VariableName="nisiDelta" VariableExpression="${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${nType}" ExpressionTypeL="String" ExpressionR="Δ" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                        </Condition>
-                        <Conditions />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="And" />
                     <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Name="Final Nisi - Text" Id="af224b88-c352-4077-9b8d-560be4672e2e" RegularExpression="Added new combatant Plasma Shield">
@@ -1973,7 +2020,7 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Name="Yukkiri Alt Limit Cut Trigger" Id="2bda5e3f-09d1-4856-b028-e7efe939fc1d" RegularExpression="B:.{8}:(?&lt;name&gt;[a-zA-Z'\- ]+):\d{4}:.{4}:0{2}(?&lt;hex&gt;[0-9A-F]+):0{4}:0{4}:0{4}:">
+              <Trigger Enabled="true" Name="Call Number" Id="2bda5e3f-09d1-4856-b028-e7efe939fc1d" RegularExpression="B:.{8}:(?&lt;name&gt;[a-zA-Z'\- ]+):\d{4}:.{4}:0{2}(?&lt;hex&gt;[0-9A-F]+):0{4}:0{4}:0{4}:">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="One" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="And">
